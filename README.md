@@ -1,5 +1,5 @@
 ```
-git clone 
+git clone https://github.com/gpldirk/Flask-blog.git
 ```
 
 ```
@@ -23,15 +23,17 @@ python3 manage.py runserver -d -r -h 0.0.0.0 -p 9000
 
 ![avatar](./profile.png)
 
+```
 deactivate ./venv/bin/activate
+```
 
-1 Flask app 分包操作 \
-2 在App package下的__init__.py中定义create_app()函数：\
-- 2.1 创建app，指定static_folder和templates_folder \
-- 2.2 加载config \
-- 2.3 加载db \
-- 2.4 加载blueprint \
-- 2.5 加载extensions \
+1 Flask app 分包操作 
+2 在App package下的__init__.py中定义create_app()函数：
+- 2.1 创建app，指定static_folder和templates_folder 
+- 2.2 加载config 
+- 2.3 加载db 
+- 2.4 加载blueprint 
+- 2.5 加载extensions 
 3 根据models及其相关的视图函数放入不同的package中定义models.py/views.py
 
 第三方插件的使用
