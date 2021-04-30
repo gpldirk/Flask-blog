@@ -28,7 +28,7 @@ deactivate ./venv/bin/activate
 ```
 
 1 Flask app 分包操作 \
-2 在App package下的__init__.py中定义create_app()函数 \
+2 在App package下的__init__.py中定义create_app()函数 
 - 2.1 创建app，指定static_folder和templates_folder 
 - 2.2 加载config 
 - 2.3 加载db 
