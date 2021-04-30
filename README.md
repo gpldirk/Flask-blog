@@ -1,14 +1,22 @@
+```
 git clone 
+```
 
+```
 source ./venv/bin/activate
+```
 
+```
 pip3 install -r requirements.txt
+```
 
 指定App/config.py中的：\
 MAIL_USERNAME = '{{your email name}}' \
 MAIL_PASSWORD = '{{your email password}}' 
 
+```
 python3 manage.py runserver -d -r -h 0.0.0.0 -p 9000 
+```
 
 ![avatar](./main.png) 
 
@@ -36,7 +44,7 @@ flask-login: 使用LoginManager()初始化app，自动管理session相关信息�
 itsdangerous: 当用户忘记密码码时使用serializer生成支持过期时间的token，之后进行验证 \
 flask-sqlalchemy: 使用SQLAlchemy()初始化app，直接通过ORM操作数据库 \
 flask-wtf: 基于FlaskForm定义Form，指定form中的每个filed及其validators，定义def validate_fieldName(self, fieldName)添加自定义限制 \
-secrets: 为app生成随机secret_key; 为上传的文件生成随机的文件名
+secrets: 为app生成随机secret_key; 为上传的文件生成随机的文件名 \
 PIL: 为用户上传的image进行resize, 减少存储空间，加快加载速度
 
 
